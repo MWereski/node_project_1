@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<form action="">
+    Imię: <br>
+    <input type="text" id="name"><br>
+    Nazwisko: <br>
+    <input type="text" id="surname"><br>
+
+    <button type="submit">Wygeneruj odnośnik</button>
+</form>
+
+    <a href="">ELO!</a>
+
+    <script>
+
+        const nameInput = document.getElementById('name')
+        const surInput = document.getElementById('surname')
+        const form = document.querySelector('form')
+
+        const a = document.querySelector('a');
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const name = nameInput.value;
+            const surname = surInput.value;
+
+            const params = new URLSearchParams({
+                name,
+                surname,
+            });
+
+            const url = `http://localhost:3000/?` + params;
+        
+            a.setAttribute('href', url);
+        });
+
+        //const name = 'Jakaś osoba';
+        //const surname = 'Tetowa';
+
+        //const a = document.querySelector('a');
+        
+        //a.setAttribute('href', url);
+
+    </script>
+
+</body>
+</html>

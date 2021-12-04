@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "name": "node_project_1",
+  "description": "Node.js, express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MWereski/node_project_1.git"
+  },
+  "author": "Michał Wereski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MWereski/node_project_1/issues"
+  },
+  "homepage": "https://github.com/MWereski/node_project_1#readme"
+}
